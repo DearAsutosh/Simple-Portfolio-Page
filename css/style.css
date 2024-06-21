@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Sacramento&family=Sevillana&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, rgb(202, 143, 204)),
+									   color-stop(0.72, rgb(195, 90, 199)),
+									   color-stop(0.86, rgb(232, 5, 253)));
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+}
+
+.first {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, white, white, rgb(195, 0, 255));
+}
+
+.font-bold {
+  font-family: "Cedarville Cursive", cursive;
+  color: purple;
+  font-size: 35px;
+}
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-bar span {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.side-bar span:hover {
+  color: purple;
+  transform: scale(1.2);
+  font-weight: 500;
+}
+
+.cross-btn {
+  color: purple;
+  font-size: 40px;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 10px 20px 10px;
+  position: sticky;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-items span {
+  padding: 5px 20px;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.nav-items span:hover {
+  color: purple;
+  transform: scale(1.2);
+  font-weight: 500;
+}
+.menu-btn {
+  display: none; 
+}
+
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  margin: 0 65px;
+}
+
+.hero {
+  font-size: 60px;
+  letter-spacing: 1.5px;
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+.hero span {
+  color: purple;
+  font-family: "Sacramento", cursive;
+  font-weight: 800;
+}
+.expertise {
+  font-size: 1.5vw;
+  margin: 15px 0;
+}
+
+.sml-hero {
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  word-spacing: 1.2px;
+}
+
+.icons {
+  margin: 15px ;
+  display: flex;
+  gap: 20px;
+}
+
+
+.icons i {
+  margin: 3px 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.icons i:hover {
+  transform: scale(1.2);
+}
+
+.buttons {
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.buttons button {
+  cursor: pointer;
+  background: purple;
+  color: white;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Quicksand", sans-serif;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  transform: scale(1.1);
+}
+
+
+/* Section 2 Styles */
+/* Base styles */
+
+/* Base styles */
+.second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.photo2 {
+  flex: 1 1 auto; /* Allow the photo2 div to grow and shrink */
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  padding: 20px;
+  text-align: center; /* Center the image horizontally */
+}
+
+.photo2 img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.text {
+  flex: 1 1 100%; /* Take up full width */
+  max-width: 100%;
+  padding: 20px;
+}
+.line{
+  display: flex;
+}
+.skill-icons img{
+  margin: 10px ;
+}
+
+
+
+
+
+
+/* Third section */
+/* Base styles */
+.third {
+  background-image: linear-gradient(to bottom right, white, white, cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 40px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-3 {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.hero-3 {
+  font-size: 3vw;
+  letter-spacing: 1.5px;
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+.sml-hero-3 {
+  font-size: 2vw;
+  letter-spacing: 1.5px;
+  word-spacing: 1.2px;
+  margin: 20px 0;
+}
+
+
+
+
+/* Forth Section */
+/* Base styles */
+.forth {
+  background-image: linear-gradient(to top right, white, white, cyan);
+  height: auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.title-4 {
+  font-size: 3vw;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.coming-soon {
+  font-size: 3vw;
+  font-weight: 800;
+  color: blue;
+  letter-spacing: 1.5px;
+}
+
+
+
+
+/* fifth section */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-image: linear-gradient(to bottom, white, white, rgba(195, 0, 255, 0.247));
+  padding: 20px;
+}
+
+.details {
+  text-align: center;
+}
+.last{
+  justify-content: center;
+}
+.hero-5 {
+  font-size: 3vw;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.sml-hero-5 {
+  font-size: 1.5vw;
+  letter-spacing: 1.5px;
+  word-spacing: 1.2px;
+  margin: 20px 0;
+}
+
+
+
+
+
+.address, .mob {
+  font-size: 1.2vw;
+}
+
+.myPhoto img {
+  border-radius: 50%;
+  background: rgba(234, 0, 255, 0.274);
+  padding: 3px;
+  filter: drop-shadow(5px 10px 5px #f701ff49);
+  height: 10vw; 
+  width: 10vw;
+}
+
+
